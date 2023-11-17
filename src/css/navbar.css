@@ -1,0 +1,55 @@
+.nav1{
+    background-color: #ff9900;
+    box-shadow: 0 5px 7px rgba(36, 34, 34, 0.5);
+    padding: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.nav1 .navbar-toggler{
+    margin-right: 5px;
+}
+
+.nav1 .collapse{
+    background-color: #ff9900;
+}
+
+.nav1 ul{
+    padding: 0;
+}
+
+.nav1 li{
+    color: #252525;
+}
+
+.nav1 li:hover{
+    background-color: #252525;
+}
+
+.nav1 li a{
+    color: #252525;
+    height: 60px;
+    line-height: 45px;
+    margin-right: 20px;
+}
+
+.nav1 li a i{
+    margin-left: 20px;
+}
+
+
+.nav1 li a:hover{
+    color: #ff9900;
+}
+
+.nav1 .logo{
+    width: 30px;
+    margin-left: 5px;
+}
+
+@media screen and (max-width:1000px){
+    .nav1{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}

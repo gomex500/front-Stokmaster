@@ -1,0 +1,177 @@
+.cont-pc{
+    position: relative;
+    width: 94%;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.cardPc{
+    width: 300px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.30);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(2px);
+    padding: 10px;
+    padding-top: 20px;
+}
+
+.cardPc h3{
+    font-weight: 900;
+    text-align: center;
+    color: #252525;
+}
+
+.cardPc hr{
+    background-color: #252525;
+}
+
+.cardPc .btn{
+    width: 80px;
+    margin: 6px;
+    background-color: #252525;
+    font-weight: 900;
+    border: #252525;
+    height: 40px;
+    font-size: 20px;
+    color: #ff9900;
+}
+
+.cardPc .btn:hover{
+    background-color: #ff9900;
+    color: #252525;
+}
+
+.cont-body{
+    margin: 0 auto;
+    width: 80%;
+}
+
+.cont-body h4{
+    font-weight: bold;
+    color: #252525;
+}
+
+.cont-body p{
+    color: #ff9900;
+}
+
+.cont-btn{
+    text-align: center;
+    padding: 1px;
+}
+
+.cont-compu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #252525ec;
+    width: 100%;
+    padding-bottom: 20%;
+}
+
+.cont-compu .btn{
+    position: absolute;
+    right: 0;
+    width: 80px;
+    margin-right: 20px;
+    margin-top: 20px;
+    background-color: #ff9900;
+    font-weight: 900;
+    border: #ff9900;
+    height: 40px;
+    font-size: 20px;
+    color: #252525;
+    border: 1px solid #ff9900;
+}
+
+.cont-compu .btn:hover{
+    background-color: #252525;
+    color: #ff9900;
+    border: 1px solid #ff9900;
+}
+
+.compu{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 100px;
+    color: #fcffff;
+}
+
+.compu h2{
+    color: #fcffff;
+    font-weight: 900;
+    font-size: 30px;
+    text-align: center;
+}
+
+.compu hr{
+    background-color: #fcffff;
+}
+
+.compu p{
+    color: #ff9900;
+}
+
+.compu p span{
+    color: #fcffff;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.compu li{
+    color: #ff9900;
+    font-weight: 900;
+}
+
+.cont-pcV{
+    display: none;
+}
+
+.cont-compu .compu .btn1{
+    margin: 0 auto;
+    position: relative;
+    width: 200px;
+    margin-top: 20px;
+    background-color: #ff9900;
+    font-weight: 900;
+    border: #ff9900;
+    height: 40px;
+    font-size: 20px;
+    color: #252525;
+    border: 1px solid #ff9900;
+}
+
+.cont-compu .compu .btn1:hover{
+    background-color: #252525;
+    color: #ff9900;
+    border: 1px solid #ff9900;
+}
+
+.cont-btn1{
+    margin-bottom: 20px;
+}
+
+.cont-btn1 .btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    background-color: #ff9900;
+    font-weight: 900;
+    border: #ff9900;
+    height: 40px;
+    font-size: 20px;
+    color: #252525;
+    border: 1px solid #ff9900;
+}
+
+.cont-btn1 .btn:hover{
+    background-color: #252525;
+    color: #ff9900;
+    border: 1px solid #ff9900;
+}
