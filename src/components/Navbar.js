@@ -3,7 +3,7 @@ import logo from '../img/logo.png'
 import '../css/navbar.css'
 
 import { useDispatch, useSelector } from "react-redux";
-import {getUser} from '../store/slices/userThunks';
+import {getUser} from '../store/slices/user/userThunks';
 import Carga from "./Carga";
 
 const Navbar = () =>{
@@ -45,7 +45,7 @@ const Navbar = () =>{
                   <a className="nav-link" href="/add"><i className="fa-solid fa-square-plus"></i> Insert</a>
                 </li>
                 <li className="nav-item">
-                <a className="nav-link" href="/user"><i class="fa-solid fa-users"></i> Users</a>
+                <a className="nav-link" href="/users"><i class="fa-solid fa-users"></i> Users</a>
               </li>
               </>
                 : null}

@@ -1,7 +1,7 @@
-import { configApi } from '../../api/configApi'
+import { configApi } from '../../../api/configApi'
 import { getPc, startLoadigPc } from "./pcSlices"; 
 
-const datos = localStorage.getItem('data');
+const datos = localStorage.getItem('user');
 
 export const getPcs = () =>{
     return async (dispatch) =>{

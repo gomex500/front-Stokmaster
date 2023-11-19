@@ -1,4 +1,4 @@
-import { configApi } from "../../api/configApi";
+import { configApi } from "../../../api/configApi";
 import {getUsuario, startLoadigUser} from "./userSlice";
 
 const datos = localStorage.getItem('user');

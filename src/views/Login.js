@@ -1,10 +1,11 @@
 import React, {useState} from "react";
 import '../css/login.css'
 import {Btn, Input, Carga} from '../components'
-import Swal from "sweetalert2";
 import { configApi } from "../api/configApi";
+import {alertas} from '../api/alertas'
 
 const Login = () =>{
+    
 
     const [user, setUser]  = useState({
         username : "",
@@ -19,16 +20,6 @@ const Login = () =>{
             ...user,
             [name]:value
         })
-    }
-
-    const alertas = (icono, texto) =>{
-        Swal.fire({
-            // position: 'top-end',
-            icon: icono,
-            title: texto,
-            showConfirmButton: false,
-            timer: 1500
-          })
     }
 
     const validarDatos = () =>{
@@ -55,13 +46,9 @@ const Login = () =>{
         setCarga(true);
         configApi.post('/login',user)
         .then((response) => {
-            localStorage.removeItem('data');
+            // localStorage.removeItem('data');
             const datos = response.data
             console.log(response);
-            // const user = {
-            //     'id':datos.id,
-            //     "session":true
-            // }
             localStorage.setItem('user',datos.id);
             setCarga(false);
             alertas('success','Bienvenido');

@@ -6,7 +6,7 @@ import '../css/home.css'
 import marca from '../img/marca.png'
 
 import { useDispatch, useSelector } from "react-redux";
-import { getPcs } from "../store/slices/pcThunks";
+import { getPcs } from "../store/slices/pc/pcThunks";
 import jsPDF from "jspdf";
 
 

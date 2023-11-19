@@ -10,3 +10,24 @@
 body{
     background-image: url('../img/fondo1.png');
 }
+
+.btn1{
+    display: block;
+    width: 200px;
+    background-color: #ff9900;
+    border: none;
+    text-decoration: none;
+    color: #252525;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 900;
+    border-radius: 5px;
+    border: 1px solid #ff9900;
+    transition: all 0.3s ease;
+}
+
+.btn1:hover{
+    background-color: #fcffff;
+    border: 1px solid #ff9900;
+    color: #ff9900;
+}
