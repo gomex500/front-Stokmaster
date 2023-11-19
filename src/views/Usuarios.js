@@ -29,8 +29,21 @@ const Usuarios = () =>{
         setUsername(e.target.value);
     }
 
-    const buscarUsuario = () =>{
-
+    const buscarUsuario = (e) =>{
+        e.preventDefault();
+        if(username){
+            configApi.get(`/username/${username}`)
+            .then((response) =>{
+                setBuscando(true);
+                setUser(response.data);
+            })
+            .catch((error) =>{
+                console.log(error);
+                alertas('error', error.response.data.message);
+            })
+        }else{
+            alertas('error', 'campo vacio');
+        }
     }
 
     const Add = () =>{
@@ -96,7 +109,7 @@ const Usuarios = () =>{
         e.preventDefault();
         if (validarDatos()) {
             if (edit) {
-                
+                updateUser();
             }else{
                 login();
             }
@@ -107,6 +120,18 @@ const Usuarios = () =>{
         configApi.post('/users',userI)
         .then((response) => {
             alertas('success','Usuario Agregado');
+            window.location = "/users";
+        })
+        .catch((error) =>{
+            console.log('error',error);
+            alertas('error',error.response.data);
+        });
+    }
+
+    const updateUser = () =>{
+        configApi.put(`/user/${userI._id}`,userI)
+        .then((response) => {
+            alertas('success',response.data.message);
             window.location = "/users";
         })
         .catch((error) =>{
@@ -264,15 +289,17 @@ const Usuarios = () =>{
                                         <td>
                                             <Btn
                                                 tp={'button'}
-                                                cls={(() =>{
-                                                    if (user.rol === 'admin') {
-                                                        return "btn4"
-                                                    }else{
-                                                        return "btn2"
-                                                    }
-                                                })()}
-                                                text={<i class="fa-solid fa-rotate"></i>}
-                                                func={console.log('')}
+                                                cls={'btn2'}
+                                                text={<i className="fa-solid fa-pencil"></i>}
+                                                fun={() => editar(user)}
+                                            />
+                                        </td>
+                                        <td>
+                                            <Btn
+                                                tp={'button'}
+                                                cls={'btn2'}
+                                                text={<i className="fa-solid fa-trash"></i>}
+                                                fun={() => deleteUser(user._id)}
                                             />
                                         </td>
                                     </tr>
