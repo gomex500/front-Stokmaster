@@ -28,7 +28,7 @@
 }
 
 .cardPc .btn{
-    width: 80px;
+    width: 90%;
     margin: 6px;
     background-color: #252525;
     font-weight: 900;
@@ -76,7 +76,7 @@
     right: 0;
     width: 80px;
     margin-right: 20px;
-    margin-top: 20px;
+    margin-top: 50px;
     background-color: #ff9900;
     font-weight: 900;
     border: #ff9900;
@@ -153,6 +153,31 @@
     margin-bottom: 20px;
 }
 
+.cont-btn2{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.cont-btn2 .btn{
+    width: 200px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    background-color: #ff9900;
+    font-weight: 900;
+    border: #ff9900;
+    height: 40px;
+    font-size: 20px;
+    color: #252525;
+    border: 1px solid #ff9900;
+}
+
+.cont-btn2 .btn:hover{
+    background-color: #252525;
+    color: #ff9900;
+    border: 1px solid #ff9900;
+}
+
 .cont-btn1 .btn{
     position: absolute;
     top: 0;
@@ -174,4 +199,75 @@
     background-color: #252525;
     color: #ff9900;
     border: 1px solid #ff9900;
+}
+
+.cont-Form-pc h2{
+    color: #ff9900;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.cont-Form-pc h3{
+    color: #ff9900;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+.cont-Form-pc .conta{
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.cont-Form-pc{
+    width: 98%;
+    margin: 0 auto;
+}
+
+
+.cont-Form-pc .contI{
+    margin-bottom: 30px;
+}
+
+.cont-Form-pc .contI label{
+    color: #ff9900;
+    font-weight: bold;
+    font-size: 17px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.cont-Form-pc .input1{
+    width: 100%;
+    padding: 10px;
+    display: inline;
+    border: none;
+    border-bottom: 1px solid #ff9900;
+    color: #ff9900;
+    background-color: #8180805b;
+    transition: all 0.6s ease;
+    border-radius: 5px;
+}
+
+.cont-Form-pc .input1:hover, .input1:focus{
+    border-bottom: 2px solid #ff9900;
+    color: #ff9900;
+}
+
+.cont-Form-pc .inputD{
+    display: inline-block;
+    width: 80%;
+}
+
+.cont-Form-pc .btn1{
+    display: inline-block;
+    width: 20%;
+}
+
+.cont-Form-pc .l{
+    text-align: center;
+    color: #ff9900;
+    font-size: 18px;
 }

@@ -38,12 +38,9 @@ const Navbar = () =>{
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <a className="nav-link" aria-current="page" href="/"><i className="fa-solid fa-house"></i> Home</a>
+                <a className="nav-link" aria-current="page" href="/"><i class="fa-solid fa-desktop"></i> PCs</a>
               </li>
               {user.rol === 1 ? <>
-                <li className="nav-item">
-                  <a className="nav-link" href="/add"><i className="fa-solid fa-square-plus"></i> Insert</a>
-                </li>
                 <li className="nav-item">
                 <a className="nav-link" href="/users"><i class="fa-solid fa-users"></i> Users</a>
               </li>
