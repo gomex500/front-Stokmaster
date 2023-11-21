@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, Routes } from 'react-router-dom';
-import { Add, Home, Login, Registro, Usuarios } from "./views";
+import { Add, Finding, Home, Login, Registro, Usuarios } from "./views";
 import { Navbar } from "./components";
 
 
@@ -17,7 +17,7 @@ const App = () =>{
           <Route path='/' element={user.nombre ? <Home/> : <Login/> }/>
           <Route path='/add' element={user.rol === 1 ? <Add/> : <Home/>}/>
           <Route path='/login' element={user.nombre ? <Home/> : <Login/>}/>
-          <Route path='/registro' element={user.rol ? <Registro/> : <Login/>}/>
+          <Route path='/finding' element={user.nombre ? <Finding/> : <Login/>}/>
           <Route path='/users' element={user.rol === 1 ? <Usuarios/> : <Home/>}/>
         </Routes>
     </div>

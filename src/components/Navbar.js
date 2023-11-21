@@ -46,6 +46,9 @@ const Navbar = () =>{
               </li>
               </>
                 : null}
+                <li className="nav-item">
+                <a className="nav-link" href="/finding"><i className="fa-solid fa-file-contract"></i> Finding</a>
+              </li>
               <li className="nav-item">
                 <a className="nav-link" onClick={cerraSesion}><i className="fa-solid fa-right-from-bracket"></i> {user.nombre}</a>
               </li>

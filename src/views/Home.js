@@ -4,7 +4,7 @@ import {alertas} from "../api/alertas"
 import {Btn, Carga, Input} from '../components'
 import '../css/home.css'
 import marca from '../img/marca.png'
-import logo from '../img/logo.png'
+// import logo from '../img/logo.png'
 
 import { useDispatch, useSelector } from "react-redux";
 import { getPcs } from "../store/slices/pc/pcThunks";
